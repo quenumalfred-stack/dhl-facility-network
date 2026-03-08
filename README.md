@@ -1,47 +1,50 @@
-# DHL U.S. Facility Network Analysis
+## Tools
 
-End-to-end analytics project using Python, SQL, and Tableau to analyze DHL facility distribution and Saturday pickup coverage across the U.S.
+SQL | Python | Tableau | Data Visualization
 
-## Repository Structure
+# DHL U.S. Facility Network Dashboard
 
-- `python/dhl_facility_refactored.py` - data cleaning and export pipeline
-- `sql/dhl_facility_analysis_queries.sql` - SQL analysis queries
-- `data/dhl_facilities_clean.csv` - cleaned dataset used for analysis and dashboarding
-- `assets/` - dashboard screenshots (add your exported Tableau PNG here)
+End-to-end logistics analytics project using SQL, Python, and Tableau.
 
-## Business Questions
+## Dashboard Preview
 
-1. Which U.S. states have the highest DHL facility concentration?
-2. What is the distribution of DHL facility categories?
-3. How does Saturday pickup availability differ by facility category?
+DHL U.S. Facility Network Dashboard
 
-## How To Run (Python)
+![DHL U.S. Facility Network Dashboard](assets/dhl_dashboard.png)
 
-```bash
-python3 python/dhl_facility_refactored.py --input data/dhl_facilities_clean.csv --output-dir outputs
-```
+## Tools Used
 
-## How To Run (SQL)
+- SQL
+- Python (Pandas)
+- Tableau
 
-Use your MySQL schema (example `dhl_project`) and run:
+## KPIs Analyzed
 
-```sql
-USE dhl_project;
-SOURCE sql/dhl_facility_analysis_queries.sql;
-```
+- Total Facilities by State
+- Facility Category Mix
+- Saturday Pickup Rate
+- Geographic Facility Coverage
+- Category Share of Total Facilities
 
-## Tableau Dashboard
+## Business Insights
 
-Dashboard title: `DHL U.S. Facility Network Dashboard`
+Key operational insights from the dashboard:
 
-Core visuals:
-- US Facility Map
-- Top States by Facilities
-- Facility Mix
-- Saturday Coverage by Category
+- Texas has the highest number of DHL facilities, making it the primary network hub.
+- Drop Box and Drop Off Facility accounts for the majority of total locations.
+- Saturday pickup coverage is highest in DHL Staffed Facilities compared to other categories.
+- Facility distribution is concentrated in major population and logistics corridors.
+- Coverage patterns highlight opportunities to optimize weekend service availability.
+
+## Project Workflow
+
+1. SQL queries analyze facility and pickup data.
+2. Python performs exploratory analysis and data preparation using Pandas.
+3. Tableau visualizes operational KPIs.
 
 ## Key Insights
 
-- Texas, Florida, and California have the highest facility counts.
-- Drop Box and Drop Off Facility is the dominant network category.
-- Saturday pickup is highest in DHL Staffed Facility and lowest in Drop Box and Drop Off Facility.
+- Texas leads all states by facility count.
+- Drop Box and Drop Off Facility dominates total network share.
+- Saturday pickup availability varies significantly by facility type.
+- Facility coverage density is highest in large metro regions.
