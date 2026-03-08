@@ -10,7 +10,7 @@ End-to-end logistics analytics project using SQL, Python, and Tableau.
 
 DHL U.S. Facility Network Dashboard
 
-![DHL U.S. Facility Network Dashboard](assets/dhl_dashboard.png)
+![Dashboard](images/dashboard.png)
 
 ## Tools Used
 
